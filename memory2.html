@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/memory2.css">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/count.js"></script>
+</head>
+
+
+
+<audio autoplay id="myaudio">
+    <source src="son/ambiance.mp3" type="audio/mp3" >
+  </audio> 
+
+  <script>
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.05;
+    var valide = document.getElementById("valide");
+    valide.volume = 0.01;
+  </script>
+
+<div class="cursor" id="cursor"></div>
+
+<body class="hide">
+
+
+    <div class="musique">
+        <a class="audio"><img src="img/nospeaker.png" alt=""></a>
+        <a class="noaudio"><img src="img/speaker.png" alt=""></a>
+    </div>
+
+    <section class="titre">
+        <article class="entete">
+            <img src="img/cartes-white.png" alt="">
+            <h3>Memory - Moyen</h3>
+        </article>
+
+        <article class="count"><p>score : <span id="compteur">0</span></p></article>
+    </section>
+
+
+
+        <section id="tapis">
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="card" id="card"><img src="img/fondcarte.png"/></article>
+                    <article class="button-retour">
+                        <a class="retour">Menu principal</a>
+                    </article>
+        </section>
+
+
+<script language="JavaScript" type="text/javascript" src="js/memory2.js"></script>
+<script type="text/javascript" src="js/cursor.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+
+    
+</body>
+</html>

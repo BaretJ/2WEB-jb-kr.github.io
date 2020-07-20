@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Loss | Home</title>
+    <link rel="icon" type="image/png" href="" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+
+<audio id="valide">
+    <source src="son/ML_Validation.mp3" type="audio/mp3" >
+</audio> 
+
+<audio autoplay loop id="myaudio">
+    <source src="son/ambiance.mp3" type="audio/mp3" >
+  </audio> 
+
+  <script>
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.05;
+    var valide = document.getElementById("valide");
+    valide.volume = 0.01;
+  </script>
+
+<div class="cursor" id="cursor"></div>
+
+
+<body class="hide">
+<canvas id=c></canvas>
+<div class="musique">
+    <a class="audio"><img src="img/nospeaker.png" alt=""></a>
+    <a class="noaudio"><img src="img/speaker.png" alt=""></a>
+</div>
+
+<section class="overlay" >
+    <article class="overlaybox">
+        <h2>MEMORY LOSS</h2>
+        <hr>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptas distinctio repellat nobis perspiciatis eligendi facilis similique voluptate facere obcaecati quaerat, ad voluptatem assumenda fuga sed ea quibusdam magni consequatur.</p>
+
+            <a id="button" class="play">Continuer</a>
+
+        </div>
+
+
+
+    </article>
+</section>
+
+
+
+<section class="title hide">
+    <h1>MEMORY LOSS</h1>
+    <a class="jouer play">JOUER</a>
+    <a class="back play">Retour</a>
+
+</section>
+
+
+<!-- SCRIPT -->
+<script src="js/script.js"></script>
+<script type="text/javascript" src="js/cursor.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+
+
+        
+
+</body>
+
+</html>
+
+

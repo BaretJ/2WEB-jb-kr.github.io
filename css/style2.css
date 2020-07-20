@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'SansForgeticaRegular';
+    src: local('Sans Forgetica Regular'),
+         local('Sans-Forgetica-Regular'),
+         url('fonts/SansForgetica-Regular.otf') format('otf');
+  }
+*{
+    padding: 0;
+    margin: 0;
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    color: #212121;
+    width: 100%;
+    font-size: 5rem;
+    line-height: 100%;
+    margin-top: 2vh;
+    font-family: 'SansForgeticaRegular';
+  }
+hr{
+    width: 10%;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    margin-top: 2vh;
+  }
+img{
+    width: 100%;
+}
+:root {
+    cursor: none;
+  }
+body, #myaudio{
+    transition: 3s;
+  }
+body{
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+  }
+.cursor2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  border: 3px solid #212121;
+  z-index: 9!important;
+}
+.on{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.musique a{
+width: 2vw;
+}
+.noaudio{
+margin-left: 1vw;
+}
+.hide{
+opacity: 0;
+}
+.show{
+opacity: 1;
+}
+.none{
+    display: none;
+}
+.block{
+    display: inline;
+}
+.musique{
+    display: flex;
+    position: absolute;
+    bottom: 4vh;
+    box-sizing: border-box;
+    z-index: 3;
+    justify-content: center;
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
+    justify-content: space-between;
+}
+.titre{
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+    margin: 5vh 0 5vh 2vw;
+    padding-left: 2vw;
+    transition: 1.5s;
+
+}
+.button-retour{
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    margin: 5vh 0 0 0;
+}
+.retour{
+    text-decoration: none;
+    color:white;
+    box-sizing: border-box;
+    padding: 0.5% 2% ;
+    border: 1px solid #212121;
+    font-size: 1rem;
+    background: #212121;
+    border-radius: 50px;
+    transition: 0.8s;
+  }
+.retour:hover{
+    background:white;
+    color: #212121;
+}
+
+.game{
+    box-sizing: border-box;
+    width: 10%;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    margin: 3vh 15% 3vh 15%;
+    transition: 1.5s;
+}
+
+.game img{
+    width: 50%;
+}
+#ok:hover{
+    padding: 1vh 0vw;
+}
+h3{
+    margin-top: 2vh;
+}
+
+.wrapper {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  .videoWrapper {
+    display: block;
+    float: left;
+    margin-top: 30px;
+  }
+  #bg-animation {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+.explications{
+    width: 100%;
+}
+.explications p{
+    text-align: center;
+    transition: 0.2s;
+}
+.blocked{
+    opacity: 0.3;
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Loss | Choix du jeu</title>
+    <link rel="icon" type="image/png" href="" />
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<iframe src="son/ML_Validation.mp3" allow="autoplay" style="display:none" id="valide">
+</iframe> 
+
+
+<audio autoplay id="myaudio">
+    <source src="son/ambiance.mp3" type="audio/mp3" >
+  </audio> 
+
+  <script>
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.05;
+    var valide = document.getElementById("valide");
+    valide.volume = 0.01;
+  </script>
+
+
+
+
+
+
+
+<body class="hide">
+
+    <div class="cursor2" id="cursor"></div>
+
+    <div class="wrapper">      
+        <canvas id="bg-animation"></canvas>
+    </div>
+
+<div class="musique">
+    <a class="audio"><img src="img/speaker-dark.png" alt=""></a>
+    <a class="noaudio"><img src="img/nospeaker-dark.png" alt=""></a>
+</div>
+
+
+
+<section class="title menu">
+    <article class="titre">
+        <h1>Choix du jeu</h1>
+        <hr>
+    </article>
+    <article class="game memory" id="ok">
+        <img src="img/cartes.png" alt="">
+        <h3>Memory</h3>
+    </article>
+    <article class="game blocked">
+        <img src="img/close.png" alt="">
+        <h3>indisponible</h3>
+    </article>    
+
+    <article class="game blocked">
+        <img src="img/close.png" alt="">
+        <h3>indisponible</h3>
+    </article>    
+    <article class="game blocked">
+        <img src="img/close.png" alt="">
+        <h3>indisponible</h3>
+    </article>
+    <article class="button-retour">
+        <a class="retour">Menu principal</a>
+    </article>
+</section>
+
+
+<!-- SCRIPT -->
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/cursor.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+<script type='text/javascript' src='js/bg-animation.js'></script>
+
+        
+
+</body>
+
+</html>
+
+

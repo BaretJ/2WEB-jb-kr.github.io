@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'SansForgeticaRegular';
+    src: local('Sans Forgetica Regular'),
+         local('Sans-Forgetica-Regular'),
+         url('fonts/SansForgetica-Regular.otf') format('otf');
+  }
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    box-sizing: border-box;
+    width: 100vw;
+    background: #212121;
+}
+body, #myaudio{
+    transition: 3s;
+  }
+img{
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+#tapis{
+    width: 80vw;
+    height: 50vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+#tapis article{
+    width: calc(100% / 8);
+    padding: 1%;
+    box-sizing: border-box;
+}
+#tapis img{
+    border-radius: 10px;
+}
+#tapis img:hover{
+    box-shadow: 0px 0px 10px black;
+    transform: rotate(-2deg);
+}
+h1{
+    color: white;
+    width: 100%;
+    font-size: 5rem;
+    line-height: 100%;
+    margin-top: 2vh;
+    font-family: 'SansForgeticaRegular';
+}
+hr{
+    width: 10%;
+    border: 2px solid white;
+    border-radius: 3px;
+    margin-top: 2vh;
+}
+.titre{
+    box-sizing: border-box;
+    width: 98vw;
+    text-align: left;
+    font-size: 3rem;
+    margin: 4vh 2vw 5vh 2vw;
+    padding: 0 6vw 0 0;
+    transition: 1.5s;
+    display: flex;
+    justify-content: space-between;
+}
+.entete{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 4vw;
+
+}
+.entete h3{
+    font-size: 2rem;
+    margin-left: 1vw;
+}
+.entete img{
+    width: 5%;
+}
+p span{
+    color: white;
+}
+
+
+.hide{
+    opacity: 0;
+}
+.none{
+    display: none;
+}
+.retour{
+    text-decoration: none;
+    color:white;
+    box-sizing: border-box;
+    padding: 0.5% 2% ;
+    border: 1px solid #212121;
+    font-size: 1rem;
+    background: #212121;
+    border-radius: 50px;
+    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+  }
+.retour:hover{
+    background:white;
+    color: #212121;
+}
+
+.audio, .noaudio{
+    color: white;
+  }
+  .musique{
+    display: flex;
+    position: absolute;
+    bottom: 4vh;
+    box-sizing: border-box;
+    z-index: 3;
+    justify-content: center;
+    width: 100%;
+  }
+  .musique a{
+    width: 2vw;
+  }
+  .noaudio{
+    margin-left: 1vw;
+  }
+  :root {
+    cursor: none;
+  }
+  .cursor {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    border: 3px solid #D1D1D1;
+    z-index: 9!important;
+  }
